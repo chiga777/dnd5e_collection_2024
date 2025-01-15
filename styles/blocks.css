@@ -1,0 +1,474 @@
+.sheet.journal-entry.dnd5e2-journal.phb, .dnd5e.item {
+  img {
+    border: none;
+  }
+
+  table.features-table {
+    width: fit-content;
+  }
+
+  /* UTILITY */
+  & .space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    clear: both;
+  }
+
+  & .space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    clear: both;
+  }
+
+  & .flex-center {
+    display: flex;
+    align-items: center;
+  }
+
+  & .space-between.top, & .space-around.top {
+    align-items: start;
+  }
+
+  & .left {
+    float: left;
+    margin-right: 5px;
+  }
+
+  & .right {
+    float: right;
+    margin-left: 5px;
+  }
+
+  & .center {
+    margin: auto;
+  }
+
+  & .four {
+    width: 400px;
+  }
+
+  & .three {
+    width: 300px;
+  }
+
+  & .two {
+    width: 200px;
+  }
+
+  & .one {
+    width: 100px;
+  }
+
+  & .clear-both {
+    clear: both;
+  }
+
+  & ul.columns-two {
+    columns: 2;
+  }
+
+  & .pages-list {
+    & .directory .directory-item.context, & .directory .directory-item.active {
+      border-color: var(--notable-color);
+    }
+
+    & .directory-item.active:first-of-type,
+    & .directory-item.active + :not(.active),
+    & .directory-item:not(.active) + .active {
+      border-top: 1px solid var(--notable-color);
+    }
+
+    & .directory-item.active:last-of-type {
+        border-bottom: 1px solid var(--notable-color);
+    }
+
+    & .page-heading .page-number:hover, & .page-heading .page-title:hover {
+        text-shadow: var(--notable-color);
+      }
+  }
+
+  /* FOUNDRY ADVICE */
+  & .fvtt.advice, & .fvtt.quest {
+      background: url("../../../systems/dnd5e/ui/parchment.jpg");
+      display: flow-root;
+  }
+
+  /* Tasha's Quote */
+  & blockquote.tasha {
+    background: #fff;
+    padding: 20px;
+    margin: 40px 12px;
+    line-height: 1.6;
+    position: relative;
+    border-width: 25px 10px 25px 10px;
+    border-style: solid;
+    border-color: transparent;
+    border-image-repeat: repeat;
+    border-image-slice: 25 25 25 25 fill;
+    border-image-source: url(../assets/ui/tasha-notes.webp);
+    background-color: transparent;
+    filter: drop-shadow(4px 4px 6px #888);
+    font-style: normal;
+  }
+  & blockquote.tasha cite {
+    font-style: normal;
+    font-weight: bold;
+    float: right;
+  }
+
+  /* NOTABLES */
+  & aside.notable {
+      display: flow-root;
+      background-color: var(--notable-color);
+  }
+
+  /* NARRATIVE */
+  & .fvtt.narrative { background: #D5DBD4; }
+
+  /* SOCIAL EXAMPLES */
+  & .social-example {
+    background: linear-gradient(90deg,
+                              rgba(241,234,215,1) 0%,
+                              rgba(240,233,215,1) 50%,
+                              rgba(255,255,255,0) 100%);
+    padding: 10px 30px;
+
+    & .highlighted {
+      background-color: #eddbb9;
+      position: relative;
+
+      & span.footnote {
+        position: absolute;
+        left: -29px;
+        top: 20%;
+        background: #9e6938;
+        color: #fff;
+        border: none;
+        border-radius: 100%;
+        z-index: 1;
+        width: var(--font-size-20);
+        aspect-ratio: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    & .dm-entry {
+      color: #7a3c2f;
+      font-weight: bold;
+    }
+
+    & .player-entry {
+      color: #466f7e;
+      font-weight: bold;
+    }
+
+    & .highlighted::after {
+      position: absolute;
+      left: -3px;
+      top: 0px;
+      height: 100%;
+      background: #9e6938;
+      content: "";
+      width: 2px;
+      display: block;
+    }
+  }
+
+  /* TABLES */
+  & table, & table.roll-table-embed {
+    border: 1px solid #EDEAE8;
+
+    & caption {
+      text-align: left;
+      font-weight: bold;
+    }
+
+    & thead {
+      color: #000;
+      font-weight: bold;
+      text-shadow: none;
+      text-align: left;
+
+      & tr {
+        background: #FDFDFD;
+      }
+
+      & th {
+        padding: 7px 7px;
+        text-align: center;
+      }
+    }
+
+    & tbody {
+      & tr:nth-child(odd) {
+          background-color: var(--table-color-odd);
+          & i {
+            filter: brightness(85%);
+          }
+      }
+
+      & tr:nth-child(even) {
+          background-color: var(--table-color-even);
+      }
+
+      & tr:hover {
+        background-color: var(--notable-color);
+      }
+
+      & td {
+        border: 1px solid #EDEAE8;
+        padding: 5px 7px;
+      }
+    }
+  }
+
+  /* Embeds */
+  & .content-embed figcaption cite::before {
+    margin-right: 2px;
+  }
+
+  /* Icons */
+  & .reference-icon {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5) no-repeat center / contain;
+    border: 1px solid var(--color-border-dark);
+    border-radius: 4px;
+    color: var(--color-text-light-highlight);
+  }
+  & .reference-icon.visibility-state {
+    color: #fff;
+    background-image: url(../../../icons/svg/cowled.svg);
+    margin-bottom: -6px;
+  }
+
+  & .reference-icon.secret-door {
+    background-image: url(../../../icons/svg/door-secret-outline.svg);
+    margin-bottom: -7px;
+  }
+
+  & .reference-icon.locked-door {
+    background-image: url(../../../icons/svg/door-locked-outline.svg);
+    margin-bottom: -7px;
+  }
+  & .reference-icon.fa-map-pin {
+    padding: 2px 0 0 5px;
+  }
+  & .reference-icon.fa-bookmark {
+    padding: 2px 0 0 3px;
+  }
+  & .reference-icon.fa-bookmark {
+    padding: 2px 0 0 3px;
+  }
+  & .reference.fa-comment-dots::before {
+    padding: 0 0 0 2px;
+  }
+  & span.currency {
+    margin-bottom: -3px;
+  }
+  & span.reference.fa-coins::before {
+    margin-left: 4px;
+  }
+
+  /* References */
+  & span.reference {
+    color: var(--color-text-dark-primary);
+    border: 1px solid var(--color-border-dark-5);
+    padding: .1rem;
+  }
+  & span.reference:before {
+    font-family: var(--font-awesome);
+    font-weight: 900;
+    color: #000;
+    margin-right: 3px;
+  }
+}
+
+.dnd5e.item {
+  & aside.notable {
+    margin: 30px 5px;
+      padding: 20px 28px 25px 30px;
+      border-width: 3px 1px;
+      border-style: solid;
+      border-color: #231f20 #b3b3b3;
+      filter: drop-shadow(0 5px 8px var(--dnd5e-shadow-15));
+
+      & h3 {
+        font-size: 1.5em;
+        font-family: var(--dnd5e-font-modesto);
+        font-weight: bold;
+      }
+  }
+
+  & aside.notable::before {
+    top: -13px;
+    right: -1px;
+    content: "";
+    background-image: url(/systems/dnd5e/ui/notable-right-corner.svg), url(/systems/dnd5e/ui/notable-right-corner.svg);
+    background-position: 0, 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 11px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+
+  & aside.notable::after {
+    bottom: -13px;
+    right: -1px;
+    transform: scaleY(-1);
+    content: "";
+    background-image: url(/systems/dnd5e/ui/notable-right-corner.svg), url(/systems/dnd5e/ui/notable-right-corner.svg);
+    background-position: 0, 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 11px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+
+  /* TABLES */
+  & .editor .editor-content {
+    & table, & table.roll-table-embed {
+      background: var(--dnd5e-color-card);
+
+      & tbody {
+        & tr:nth-child(odd) { background-color: var(--dnd5e-color-card); }
+        & tr:nth-child(even) { background-color: var(--dnd5e-color-parchment); }
+      }
+
+      & thead {
+        text-align: center;
+        font-family: var(--dnd5e-font-roboto-slab);
+        font-weight: bold;
+        text-shadow: none;
+        border-color: var(--dnd5e-color-gold);
+        color: #fff;
+
+        & tr {
+          background: linear-gradient(to right, var(--dnd5e-color-hd-1), var(--dnd5e-color-hd-2));
+          color: var(--color-text-light-0);
+        }
+      }
+    }
+
+    /* Description @Embeds */
+    & figure.content-embed {
+
+        margin: 0.5em 0;
+
+        /* "inline" captions (non-rolltables) need some
+           space between the user provided
+           caption and the caption document link border */
+        & strong.embed-caption {
+          margin-right: 0.3em;
+        }
+
+        & .roll-table-embed {
+          /* Numerical ranges in the first column of roll tables
+             are best displayed without line breaks.
+             Centering follows wotc styling. */
+          & thead tr th:first-child,
+          & tbody tr td:first-child {
+            white-space:nowrap;
+            text-align: center;
+            padding-right: 2px;
+          }
+        }
+
+        /* 'caption-top' is useful for embedding extended item text within
+            another item, such as RollTables. Tweak stock formatting to look
+            more like the surrounding parent text. */
+        &.caption-top {
+
+          display: flex;
+          flex-direction: column;
+          margin-top: 0;
+
+          & p + p {
+            margin-top: 0;
+          }
+
+          & .roll-table-embed,
+          img {
+            order: 2;
+          }
+
+          /* Removing padding from descriptions since
+             item sheets are usually smaller */
+          & figcaption {
+            padding: initial;
+            margin-top: 0;
+            text-align: left;
+          }
+
+          & .embed-caption {
+            text-align: left;
+            font-style: inherit;
+          }
+
+          /* RollTable embeds place their HTML description within the caption.
+             Inherit weight from parent container and style the citation
+             to look like the others */
+          & .roll-table-embed + figcaption {
+            font-weight: inherit;
+
+            & cite {
+              display: block;
+              font-weight: bold;
+              margin-top: 0.5em;
+            }
+          }
+        }
+
+        /* When embedding in another item, it may be better  */
+        /* for readability to suppress any table elements. */
+        &.no-tables table {
+          display: none;
+        }
+
+        /* Similar for secrets, as they may be intended */
+        /* for usage notes specific to said embedded doc */
+        &.no-secrets .secret {
+          display: none;
+        }
+      }
+  }
+}
+
+/* Advancements */
+.dnd5e.advancement.flow form.tcoe-replacement-grant {
+  & .tcoe-replacement-group {
+
+    /* space below the bordered fieldsets */
+    &:not(:last-child) {
+      margin-bottom:0.5em;
+    }
+
+    & input[type=radio] {
+      flex: 0 0 20px;
+      width: 20px;
+      height: 20px;
+      margin: 3px 5px;
+    }
+  }
+
+  & .tcoe-dependent-feature {
+    padding: 4px 0 0 4px;
+
+    &::before {
+      content: "↳";
+      font-size: var(--font-size-20);
+      padding-right: 4px;
+    }
+  }
+}

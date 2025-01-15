@@ -1,0 +1,186 @@
+{
+    "name": "dnd5e_collection_2024",
+    "title": "千菓的 D&D5E 合集 (2024)",
+    "description": "一个包含了 D&D5E 部分资料的模组",
+    "version": "1.0.0",
+    "library": "false",
+    "compatibility": {
+        "minimum": 12,
+        "verified": 12,
+        "maximum": 12
+    },
+    "esmodules": [
+        "scripts/players-handbook.mjs"
+    ],
+    "authors": [
+        {
+            "name": "chiga777",
+            "email": "chiga777@qq.com",
+            "url": ""
+        }
+    ],
+    "styles": [
+        "styles/dnd5e.css",
+        "styles/players-handbook.css"
+    ],
+    "packs": [
+        {
+            "name": "players-handbook",
+            "label": "玩家手册 Player's Handbook (2024)",
+            "path": "packs/players-handbook",
+            "type": "JournalEntry",
+            "banner": "modules/dnd5e_collection_2024/assets/banner/phb-2024.webp",
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e",
+            "flags": {
+                "display": "table-of-contents"
+            }
+        },
+        {
+            "name": "phb-content",
+            "label": "PHB 2024 资源",
+            "type": "Item",
+            "banner": "modules/dnd5e_collection_2024/assets/banner/original.webp",
+            "path": "packs/phb-content",
+            "sorting": "m",
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        },
+        {
+            "name": "phb-creatures",
+            "label": "PHB 2024 造物",
+            "path": "packs/phb-creatures",
+            "type": "Actor",
+            "banner": "modules/dnd5e_collection_2024/assets/banner/green.webp",
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        },
+        {
+            "name": "mm-creatures",
+            "label": "MM 2025 造物",
+            "path": "packs/mm-creatures",
+            "type": "Actor",
+            "banner": "modules/dnd5e_collection_2024/assets/banner/green.webp",
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        },
+        {
+            "name": "tables",
+            "label": "Dc⁷ 随机表",
+            "path": "packs/tables",
+            "type": "RollTable",
+            "banner": "modules/dnd5e_collection_2024/assets/banner/pink-salmon.webp",
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        },
+        {
+            "name": "derived-content",
+            "label": "Dc⁷ 派生物品",
+            "path": "packs/derived-content",
+            "type": "Item",
+            "banner": "modules/dnd5e_collection_2024/assets/banner/orange.webp",
+            "ownership": {
+                "PLAYER": "NONE",
+                "ASSISTANT": "OWNER"
+            },
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        },
+        {
+            "name": "derived-creatures",
+            "label": "Dc⁷ 派生造物",
+            "path": "packs/derived-creatures",
+            "type": "Actor",
+            "banner": "modules/dnd5e_collection_2024/assets/banner/green.webp",
+            "ownership": {
+                "PLAYER": "NONE",
+                "ASSISTANT": "OWNER"
+            },
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        },
+        {
+            "name": "macros",
+            "label": "Dc⁷ 宏",
+            "path": "packs/macros",
+            "type": "Macro",
+            "banner": "modules/dnd5e_collection_2024/assets/banner/prussian-blue.webp",
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        },
+        {
+            "name": "index",
+            "label": "Dc⁷ 索引表",
+            "path": "packs/index",
+            "type": "JournalEntry",
+            "banner": "modules/dnd5e_collection_2024/assets/banner/red.webp",
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        }
+    ],
+    "packFolders": [
+        {
+            "name": "千菓的 D&D5E 合集 (2024)",
+            "sorting": "m",
+            "color": "#6f0016",
+            "folders": [
+                {
+                    "name": "玩家手册 Player's Handbook",
+                    "sorting": "m",
+                    "color": "#eeab4d",
+                    "packs": [
+                        "players-handbook",
+                        "phb-content",
+                        "phb-creatures"
+                    ]
+                },
+                {
+                    "name": "怪物图鉴 Monster Manual",
+                    "sorting": "m",
+                    "color": "#1a3a66",
+                    "packs": [
+                        "mm-creatures"
+                    ]
+                },
+                {
+                    "name": "派生内容",
+                    "sorting": "m",
+                    "color": "#625b57",
+                    "packs": [
+                        "tables",
+                        "derived-content",
+                        "derived-creatures",
+                        "macros",
+                        "index"
+                    ],
+                    "folders": [
+        
+                    ]
+                }
+
+            ]
+        }
+    ],
+    "manifest": "",
+    "download": "",
+    "flags": {
+        "dnd5e": {
+            "sourceBooks": {
+                "PHB 2024": "玩家手册 PHB (2024)",
+                "DMG 2024": "城主指南 DMG (2024)",
+                "MM 2025": "怪物图鉴 MM (2025)"
+            },
+            "spellLists": [
+                "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.fNF1GpDQAc8CNGMk.JournalEntryPage.wwia6Wwo4BgE9GSI",
+                "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.fNF1GpDQAc8CNGMk.JournalEntryPage.SkHptN2PTzFGDaEj",
+                "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.fNF1GpDQAc8CNGMk.JournalEntryPage.LhvuDQEyrCdg5EfU",
+                "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.fNF1GpDQAc8CNGMk.JournalEntryPage.8yD9Jgp404hfZ9ie",
+                "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.fNF1GpDQAc8CNGMk.JournalEntryPage.5HnIk6HsrSxkvkz5",
+                "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.fNF1GpDQAc8CNGMk.JournalEntryPage.VfZ5mH2ZuyFq82Ga",
+                "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.fNF1GpDQAc8CNGMk.JournalEntryPage.sSzagq8GvYXpfmfs",
+                "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.fNF1GpDQAc8CNGMk.JournalEntryPage.6AnqLUowgdsqMFvz"
+            ]
+        }
+    }
+
+}

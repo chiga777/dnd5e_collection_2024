@@ -1,0 +1,22 @@
+/* ---------------------------------------- */
+/*  Typography                              */
+/* ---------------------------------------- */
+:root {
+    /* Font Sizes */
+    --font-h1-size: 2rem;
+    --font-h2-size: 1.8rem;
+    --font-h3-size: 1.6rem;
+    --font-h4-size: 1.4rem;
+    --font-h5-size: 1.2rem;
+    --font-h6-size: 1.0rem;
+    --body-size: 1rem;
+
+    /* ---------------------------------------- */
+    /*  Colors                                  */
+    /* ---------------------------------------- */
+    --narrative-border: #fff;
+    --notable-color: #ebdbcd;
+    --table-color-odd: #dce9ee;
+    --table-color-even: #f2f7f9;
+    --phb-red: #5a0507;
+}

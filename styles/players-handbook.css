@@ -1,0 +1,66 @@
+@import url("variables.css");
+@import url("journal.css");
+@import url("blocks.css");
+@import url("table-of-contents.css");
+
+table.border {
+    border-image-slice: 70 100 70 100;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px;
+    border-image-repeat: repeat;
+    border-image-source: url(../assets/ui/border.webp);
+    border-style: solid;
+}
+
+.wild-magic-surge table td:first-child {
+  min-width: 70px;
+}
+
+.phb {
+  & img.border, & figure.border {
+    border-image-slice: 70 100 70 100;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px;
+    border-image-repeat: repeat;
+    border-image-source: url(../assets/ui/border.webp);
+    border-style: solid;
+  }
+
+  & .callout-border {
+    position: relative;
+    border-image-slice: 100;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px;
+    border-image-repeat: repeat;
+    border-image-source: url(../assets/ui/callout-border.webp);
+    border-style: solid;
+    padding: 30px 30px 20px;
+    margin-bottom: 20px;
+
+    & span.footnote {
+        position: absolute;
+        left: -5px;
+        top: -8px;
+        background: #9e6938;
+        color: #fff;
+        border: none;
+        border-radius: 100%;
+        z-index: 1;
+        width: var(--font-size-20);
+        aspect-ratio: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+  }
+
+  & .left-filigree {
+    border-image-slice: 70 70 70 70;
+    border-image-width: 90px 0px 0px 40px;
+    border-image-outset: 0px;
+    border-image-repeat: repeat;
+    border-image-source: url(../assets/ui/left-filigree.webp);
+    padding-left: 50px;
+  }
+}

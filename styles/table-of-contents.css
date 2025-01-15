@@ -1,0 +1,46 @@
+.table-of-contents.phb {
+    --dnd5e-srd-color-chapter-header: var(--phb-red);
+    --dnd5e-srd-color-border: var(--phb-red);
+    --dnd5e-srd-color-box-header: #fff;
+  
+    & .window-content {
+      background-image: url(../assets/ui/page-background.webp);
+      background-size: cover;
+      background-position: center;
+  
+      scrollbar-width: thin;
+      scrollbar-color: var(--phb-red) transparent;
+      
+      &::-webkit-scrollbar-track {
+        box-shadow: none;
+        border-radius: 0;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        border: none;
+        background: var(--phb-red);
+      }
+    }
+  
+    & aside { order: 0; }
+  
+    & .contents > section {
+      column-count: unset;
+      column-width: 30ch;
+      & > div {
+        break-inside: auto;
+        & ul { margin-inline-start: 0.5rem; }
+      }
+      & ul li.special-entry:not(.child-pages) > a {
+        font-weight: normal;
+      }
+    }
+  
+    & ul > li:has(ul) {
+      break-inside: avoid-column;
+    }
+  
+    & h3 {
+      font-family: var(--dnd5e-font-modesto);
+    }
+}
