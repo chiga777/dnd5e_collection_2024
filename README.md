@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # D&D5E 合集 (2024) for Foundry Virtual Tabletop
 
 ![Supported Versions](https://img.shields.io/badge/FVTT-V12,%20DND4.1+-8b0000?style=flat-square) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/chiga777/dnd5e_collection_2024?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/chiga777/dnd5e_collection_2024/total?style=flat-square) [![Bilibili](https://img.shields.io/badge/Bilibili-千菓チカ"-00A1D6?logo=Bilibili&logoColor=white&style=flat-square)](https://space.bilibili.com/37702076) [![Bilibili](https://img.shields.io/badge/支援-千菓チカ"-FF69B4?logo=Bilibili&logoColor=white&style=flat-square)](https://www.bilibili.com/opus/1004555041941487616)
