@@ -29,7 +29,7 @@
             "label": "玩家手册 Player's Handbook (2024)",
             "path": "packs/players-handbook",
             "type": "JournalEntry",
-            "banner": "modules/dnd5e_collection_2024/assets/banner/phb-2024.webp",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/phb-2024.webp",
             "module": "dnd5e_collection_2024",
             "system": "dnd5e",
             "flags": {
@@ -40,7 +40,7 @@
             "name": "phb-content",
             "label": "PHB 2024 资源",
             "type": "Item",
-            "banner": "modules/dnd5e_collection_2024/assets/banner/original.webp",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/orange.webp",
             "path": "packs/phb-content",
             "sorting": "m",
             "module": "dnd5e_collection_2024",
@@ -51,7 +51,7 @@
             "label": "PHB 2024 造物",
             "path": "packs/phb-creatures",
             "type": "Actor",
-            "banner": "modules/dnd5e_collection_2024/assets/banner/green.webp",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/green.webp",
             "module": "dnd5e_collection_2024",
             "system": "dnd5e"
         },
@@ -60,7 +60,7 @@
             "label": "MM 2025 造物",
             "path": "packs/mm-creatures",
             "type": "Actor",
-            "banner": "modules/dnd5e_collection_2024/assets/banner/green.webp",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/green.webp",
             "module": "dnd5e_collection_2024",
             "system": "dnd5e"
         },
@@ -69,7 +69,7 @@
             "label": "Dc⁷ 随机表",
             "path": "packs/tables",
             "type": "RollTable",
-            "banner": "modules/dnd5e_collection_2024/assets/banner/pink-salmon.webp",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/pink-salmon.webp",
             "module": "dnd5e_collection_2024",
             "system": "dnd5e"
         },
@@ -78,7 +78,7 @@
             "label": "Dc⁷ 派生物品",
             "path": "packs/derived-content",
             "type": "Item",
-            "banner": "modules/dnd5e_collection_2024/assets/banner/orange.webp",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/orange.webp",
             "ownership": {
                 "PLAYER": "NONE",
                 "ASSISTANT": "OWNER"
@@ -91,7 +91,7 @@
             "label": "Dc⁷ 派生造物",
             "path": "packs/derived-creatures",
             "type": "Actor",
-            "banner": "modules/dnd5e_collection_2024/assets/banner/green.webp",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/green.webp",
             "ownership": {
                 "PLAYER": "NONE",
                 "ASSISTANT": "OWNER"
@@ -104,7 +104,7 @@
             "label": "Dc⁷ 宏",
             "path": "packs/macros",
             "type": "Macro",
-            "banner": "modules/dnd5e_collection_2024/assets/banner/prussian-blue.webp",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/prussian-blue.webp",
             "module": "dnd5e_collection_2024",
             "system": "dnd5e"
         },
@@ -113,7 +113,7 @@
             "label": "Dc⁷ 索引表",
             "path": "packs/index",
             "type": "JournalEntry",
-            "banner": "modules/dnd5e_collection_2024/assets/banner/red.webp",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/red.webp",
             "module": "dnd5e_collection_2024",
             "system": "dnd5e"
         }
