@@ -4,7 +4,8 @@ export {
   replacementSkillReferences,
   replacementSpellSchoolReferences,
   replacementRules,
-  newRules
+  newRules,
+  weaponMasteriesReferences
 }
 
 // Enrichment changes
@@ -325,4 +326,39 @@ const replacementConditionTypes = {
   stunned: { reference: "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.JaBtNuiFJZaRoJWX.JournalEntryPage.EjbXjvyQAMlDyANI"},
   suffocation: { reference: "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.JaBtNuiFJZaRoJWX.JournalEntryPage.gAvV8TLyS8UGq00x"},
   unconscious: { reference: "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.JaBtNuiFJZaRoJWX.JournalEntryPage.fZCRaKEJd4KoQCqH"},
+}
+
+const weaponMasteriesReferences = {
+  cleave: {
+    reference:
+      "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.vF1Kqptk2gQmyq9P.JournalEntryPage.TO9QtGi7Hutus0Qe",
+  },
+  graze: {
+    reference:
+      "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.vF1Kqptk2gQmyq9P.JournalEntryPage.FXMDFyz5IFOIEVVi",
+  },
+  nick: {
+    reference:
+      "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.vF1Kqptk2gQmyq9P.JournalEntryPage.8n6ZjYfr0ExZnu8g",
+  },
+  push: {
+    reference:
+      "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.vF1Kqptk2gQmyq9P.JournalEntryPage.PPCAl7mZVhs40tDN",
+  },
+  sap: {
+    reference:
+      "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.vF1Kqptk2gQmyq9P.JournalEntryPage.Y8aZSZijQnLXOnqF",
+  },
+  slow: {
+    reference:
+      "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.vF1Kqptk2gQmyq9P.JournalEntryPage.xAqgTc9Qn42Esj81",
+  },
+  topple: {
+    reference:
+      "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.vF1Kqptk2gQmyq9P.JournalEntryPage.yrzb8TwsLmXaQFt5",
+  },
+  vex: {
+    reference:
+      "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.vF1Kqptk2gQmyq9P.JournalEntryPage.1Pq6ZQmxAyeSQB0z",
+  },
 }

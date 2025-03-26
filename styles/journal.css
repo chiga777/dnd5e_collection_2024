@@ -1,64 +1,143 @@
 .sheet.journal-entry.phb {
-    & .journal-sheet-container .journal-entry-content {
-        background-image: url(../assets/ui/page-background.webp);
-        background-size: cover;
+  --dnd5e-color-table-row-even: var(--table-row-even);
+  --dnd5e-color-table-row-odd: var(--table-row-odd);
+
+  & .journal-sheet-container .journal-entry-content {
+
+    border-image: var(--phb-border-image);
+
+    /**
+     * Title and Header styling
+     * to match book
+     **/
+    & .journal-header .title {
+      color: var(--phb-red);
     }
-    
-    & .book-navigation {
-        flex-grow: 0;
-        padding: 5px 0px;
-        margin: 0 10px 10px;
-        border: none;
-        opacity: .2;
-        transition: all 0.5s ease-out;
-    
-        &:hover {
-          opacity: 1;
-        }
-    
-        & ul {
-          display: flex;
-          gap: 5px;
-          margin: 0;
-          padding-inline: 1rem;
-          list-style: none;
-        }
-        & li {
-          flex: 1 1 33%;
-        }
-        & a {
-          display: block;
-          border: none;
-          background: none;
-          text-align: center;
-          text-decoration: none;
-        }
-        & a[rel="prev"] {
-          text-align: start;
-          &::before {
-            content: "\f060";
-            font-family: var(--font-awesome);
-            font-weight: bold;
-            padding-inline-end: 2px;
-          }
-        }
-        & a[rel="next"] {
-          text-align: end;
-          &::after {
-            content: "\f061";
-            font-family: var(--font-awesome);
-            font-weight: bold;
-            padding-inline-start: 2px;
-          }
-        }
-        & a.parent {
-          text-align: center;
-          &::before {
-            content: "\f062";
-            font-family: var(--font-awesome);
-            font-weight: bold;
-            padding-inline-end: 3px;
-          }
+
+    & h2 {
+      border-bottom: 2px solid var(--phb-saturated-gold);
+      border-image: linear-gradient(to right, var(--phb-saturated-gold), transparent 90%);
+      border-image-slice: 0 0 1 0;
+    }
+
+    & h4:not(.statblock-title) {
+      border:none;
+    }
+    /** END
+     * Title and Header styling
+     * */
+  }
+
+  & .pages-list {
+    --color-border-highlight: var(--notable-color);
+    --color-shadow-primary: var(--table-color-odd);
+
+    /* lightens non-active borders and fixes core
+       * styling error */
+    & .directory-item:not(.active) {
+      border-color: var(--color-border-dark-3);
+    }
+  }
+
+  & .book-navigation {
+    flex-grow: 0;
+    padding: 5px 0px;
+    margin: 0 10px 10px;
+    border: none;
+    opacity: 0.2;
+    transition: opacity 0.5s ease-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    & ul {
+      display: flex;
+      gap: 5px;
+      margin: 0;
+      padding-inline: 1rem;
+      list-style: none;
+    }
+    & li {
+      flex: 1 1 33%;
+    }
+    & a {
+      display: block;
+      border: none;
+      background: none;
+      text-align: center;
+      text-decoration: none;
+    }
+    & a[rel="prev"] {
+      text-align: start;
+      &::before {
+        content: "\f060";
+        font-family: var(--font-awesome);
+        font-weight: bold;
+        padding-inline-end: 2px;
+      }
+    }
+    & a[rel="next"] {
+      text-align: end;
+      &::after {
+        content: "\f061";
+        font-family: var(--font-awesome);
+        font-weight: bold;
+        padding-inline-start: 2px;
+      }
+    }
+    & a.parent {
+      text-align: center;
+      &::before {
+        content: "\f062";
+        font-family: var(--font-awesome);
+        font-weight: bold;
+        padding-inline-end: 3px;
+      }
+    }
+  }
+
+  /* TABLES */
+  & table {
+    border-color: var(--table-border-color);
+
+    & caption {
+      text-align: left;
+    }
+
+    & thead {
+      color: black;
+      text-align: left;
+
+      & tr {
+        background: var(--table-header-color);
+      }
+
+      & th {
+        padding: 12px 20px;
+      }
+    }
+
+    & tbody {
+      & tr:nth-child(odd) {
+        background-color: var(--table-color-odd);
+        & i {
+          filter: brightness(85%);
         }
       }
+
+      & tr:nth-child(even) {
+        background-color: var(--table-color-even);
+      }
+
+      & tr:hover {
+        background-color: var(--notable-color);
+      }
+
+      & td {
+        border-color: var(--table-border-color);
+        padding: 5px 20px;
+      }
+    }
+  }
 }

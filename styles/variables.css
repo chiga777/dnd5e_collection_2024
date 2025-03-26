@@ -1,16 +1,8 @@
 /* ---------------------------------------- */
-/*  Typography                              */
+/*  Project Variables                       */
 /* ---------------------------------------- */
-:root {
-    /* Font Sizes */
-    --font-h1-size: 2rem;
-    --font-h2-size: 1.8rem;
-    --font-h3-size: 1.6rem;
-    --font-h4-size: 1.4rem;
-    --font-h5-size: 1.2rem;
-    --font-h6-size: 1.0rem;
-    --body-size: 1rem;
-
+.table-of-contents[data-compendium-id="dnd5e_collection_2024.players-handbook"],
+.phb {
     /* ---------------------------------------- */
     /*  Colors                                  */
     /* ---------------------------------------- */
@@ -18,5 +10,25 @@
     --notable-color: #ebdbcd;
     --table-color-odd: #dce9ee;
     --table-color-even: #f2f7f9;
+    --table-border-color: #EDEAE8;
+    --table-header-color: #fdfdfd;
     --phb-red: #5a0507;
+    --phb-border-image: url(../assets/ui/page-background.webp) 40 40 40 10 fill / 5% 3% 2% 1% / 0 round;
+    --phb-saturated-gold: color(srgb 0.900816 0.74032 0.420752);
+}
+
+.table-of-contents[data-compendium-id="dnd5e_collection_2024.index"],
+.phb {
+    /* ---------------------------------------- */
+    /*  Colors                                  */
+    /* ---------------------------------------- */
+    --narrative-border: #fff;
+    --notable-color: #ebdbcd;
+    --table-color-odd: #dce9ee;
+    --table-color-even: #f2f7f9;
+    --table-border-color: #EDEAE8;
+    --table-header-color: #fdfdfd;
+    --phb-red: #5a0507;
+    --phb-border-image: url(../assets/ui/page-background.webp) 40 40 40 10 fill / 5% 3% 2% 1% / 0 round;
+    --phb-saturated-gold: color(srgb 0.900816 0.74032 0.420752);
 }
