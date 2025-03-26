@@ -23,6 +23,17 @@
         "styles/dnd5e.css",
         "styles/players-handbook.css"
     ],
+    "relationships": {
+        "systems": [
+          {
+            "id": "dnd5e",
+            "type": "system",
+            "compatibility": {
+              "minimum": "4.3.5"
+            }
+          }
+        ]
+      },
     "packs": [
         {
             "name": "players-handbook",
