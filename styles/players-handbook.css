@@ -8,7 +8,7 @@ table.border {
     border-image-width: 60px 60px 60px 60px;
     border-image-outset: 0px;
     border-image-repeat: repeat;
-    border-image-source: url(../assets/ui/border.webp);
+    border-image-source: url(../assets/ui/phb/border.webp);
     border-style: solid;
 }
 
@@ -22,7 +22,7 @@ table.border {
     border-image-width: 60px 60px 60px 60px;
     border-image-outset: 0px;
     border-image-repeat: repeat;
-    border-image-source: url(../assets/ui/border.webp);
+    border-image-source: url(../assets/ui/phb/border.webp);
     border-style: solid;
   }
 
@@ -32,7 +32,7 @@ table.border {
     border-image-width: 60px 60px 60px 60px;
     border-image-outset: 0px;
     border-image-repeat: repeat;
-    border-image-source: url(../assets/ui/callout-border.webp);
+    border-image-source: url(../assets/ui/phb/callout-border.webp);
     border-style: solid;
     padding: 30px 30px 20px;
     margin-bottom: 20px;
@@ -60,7 +60,7 @@ table.border {
     border-image-width: 90px 0px 0px 40px;
     border-image-outset: 0px;
     border-image-repeat: repeat;
-    border-image-source: url(../assets/ui/left-filigree.webp);
+    border-image-source: url(../assets/ui/phb/left-filigree.webp);
     padding-left: 50px;
   }
 }

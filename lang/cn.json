@@ -1,0 +1,33 @@
+{
+"DND5E.AbilityModifierShort": "调整",
+
+"EDITOR.DND5E.Inline": {
+  "ApplyStatus": "将状态应用于选定的指示物",
+  "AttackExtended": "<em>{type}</em>: {parts}",
+  "AttackLong": "{formula} 命中",
+  "AttackShort": "{formula}",
+  "AwardEach": "{award} 给每人",
+  "CheckShort": "{check}",
+  "CheckLong": "{check} 检定",
+  "DamageExtended": "<em>命中：</em> {damage}伤害",
+  "DamageDouble": "{first} 外加 {second}",
+  "DamageShort": "{formula} {type}",
+  "DamageLong": " {average} ({formula}) {type}",
+  "DC": "DC {dc} {check}",
+  "DCPassiveShort": "DC {dc} 被动 {check}",
+  "DCPassiveLong": "被动 {check} 结果 {dc} 或更高",
+  "NoActorWarning": "找不到选定或指定的角色来执行此掷骰。",
+  "PassiveShort": "被动 {check}",
+  "PassiveLong": "被动 {check} 值",
+  "RequestRoll": "请求掷骰",
+  "RollRequest": "请求掷骰",
+  "SaveShort": "{save}",
+  "SaveLong": "{save}豁免",
+  "SpecificCheck": "{ability} ({type})",
+  "Warning": {
+    "NoActivityOnItem": "{actor} 上的 {item} 没有名为 {activity} 的行动。",
+    "NoActor": "找不到选定或指定的角色来执行该掷骰。",
+    "NoItemOnActor": "{actor} 没有名称为 {item} 的物品。"
+  }
+}
+}

@@ -1,0 +1,8 @@
+2025/11/15-20:03:27.092 295c Recovering log #8
+2025/11/15-20:03:27.097 295c Delete type=0 #8
+2025/11/15-20:03:27.097 295c Delete type=3 #6
+2025/11/15-20:14:49.643 3480 Level-0 table #13: started
+2025/11/15-20:14:49.644 3480 Level-0 table #13: 0 bytes OK
+2025/11/15-20:14:49.645 3480 Delete type=0 #11
+2025/11/15-20:14:49.645 3480 Manual compaction at level-0 from '!folders!6fqUFq5PtD28l5aN' @ 72057594037927935 : 1 .. '!scenes.walls!dmgWizardsTower0.zx6cCmJML8UR7XWM' @ 0 : 0; will stop at (end)
+2025/11/15-20:14:49.645 3480 Manual compaction at level-1 from '!folders!6fqUFq5PtD28l5aN' @ 72057594037927935 : 1 .. '!scenes.walls!dmgWizardsTower0.zx6cCmJML8UR7XWM' @ 0 : 0; will stop at (end)

@@ -472,3 +472,354 @@
     }
   }
 }
+
+figure.content-embed.dmg,
+.dmg {
+  img {
+    border: none;
+  }
+
+  & .window-content :where(h1, h2, h3, h4) {
+    color: var(--phb-red);
+  }
+
+  /* TABLES */
+  & table {
+    border: none;
+
+    & caption {
+      text-align: left;
+    }
+
+    & i,
+    & button {
+      color: var(--color-text-dark-primary);
+    }
+
+    & thead {
+      color: black;
+      text-align: left;
+      background: var(--table-header-color);
+      border: none;
+
+      & th {
+        padding: 7px 7px;
+      }
+    }
+
+    & tbody {
+      & tr:hover {
+        background-color: var(--notable-color);
+      }
+
+      & td {
+        padding: 5px 7px;
+      }
+    }
+  }
+
+  /* UTILITY */
+  & .space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    clear: both;
+  }
+
+  & .space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    clear: both;
+    gap: 10px;
+  }
+
+  & .wrap {
+    flex-wrap: wrap;
+  }
+
+  & .space-between.top,
+  & .space-around.top {
+    align-items: start;
+  }
+
+  & .left {
+    float: left;
+    margin-right: 5px;
+  }
+
+  & .right {
+    float: right;
+    margin-left: 5px;
+  }
+
+  & .center {
+    margin: auto;
+  }
+
+  & .four {
+    width: 400px;
+  }
+
+  & .three {
+    width: 300px;
+  }
+
+  & .two {
+    width: 200px;
+  }
+
+  & .one {
+    width: 100px;
+  }
+
+  & .clear-both {
+    clear: both;
+  }
+
+  & ul.columns-two {
+    columns: 2;
+  }
+
+  & .scroll-x {
+    overflow-x: scroll;
+  }
+
+  & .hide-secrets .content-embed .secret {
+    display: none;
+  }
+
+  & .content-embed .hide-in-embed {
+    display: none;
+  }
+
+  /* FOUNDRY ADVICE/QUEST/NARRATIVE */
+  & .fvtt.advice,
+  & .fvtt.quest {
+    background: url("../../../systems/dnd5e/ui/parchment.jpg");
+    display: flow-root;
+
+    & h3 {
+      color: var(--color-text-dark-primary);
+    }
+  }
+
+  &.sheet.journal-entry .fvtt.narrative,
+  & .fvtt.narrative {
+    background-color: var(--narrative-bg-color);
+    border-color: var(--narrative-border-color);
+
+    & > p:last-of-type::before,
+    & > p:last-of-type::after,
+    &::before,
+    &::after {
+      background-color: var(--narrative-border-color);
+    }
+  }
+
+  /* NOTABLES */
+  &.sheet.journal-entry aside.notable,
+  & aside.notable {
+    display: flow-root;
+    background-color: var(--notable-color);
+
+    & h3 {
+      font: var(--font-h5);
+      font-weight: bold;
+      font-size: larger;
+      color: var(--color-text-dark-primary);
+      font-variant: small-caps;
+    }
+  }
+
+  /* SOCIAL EXAMPLES */
+  & .social-example {
+    background: var(--dmg-social-gradient);
+    padding: 10px 30px;
+
+    & .highlighted {
+      background-color: var(--dmg-highlight-color);
+      position: relative;
+
+      & span.footnote {
+        position: absolute;
+        left: -29px;
+        top: 20%;
+        background: var(--dmg-bubble-bg);
+        color: #fff;
+        border: none;
+        border-radius: 100%;
+        z-index: 1;
+        width: var(--font-size-20);
+        aspect-ratio: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    & .dm-entry {
+      color: var(--dmg-brown);
+      font-weight: bold;
+    }
+
+    & .player-entry {
+      color: var(--dmg-saturated-teal);
+      font-weight: bold;
+    }
+
+    & .highlighted::after {
+      position: absolute;
+      left: -3px;
+      top: 0px;
+      height: 100%;
+      background: var(--dmg-saturated-teal);
+      content: "";
+      width: 2px;
+      display: block;
+    }
+
+  }
+
+  & .social-callouts {
+    flex-shrink:1.1;
+  }
+
+  /* Callouts */
+  & .callout-border {
+    position: relative;
+    border-image-slice: 100;
+    border-image-width: 60px 60px 60px 60px;
+    border-image-outset: 0px;
+    border-image-repeat: repeat;
+    border-image-source: url(../assets/ui/dmg/callout-border.webp);
+    border-style: solid;
+    padding: 30px 30px 20px;
+    margin-bottom: 20px;
+    background: var(--dmg-callout-bg);
+
+    & span.footnote {
+      position: absolute;
+      left: -5px;
+      top: -8px;
+      background: var(--dmg-bubble-bg);
+      color: #fff;
+      border: none;
+      border-radius: 100%;
+      z-index: 1;
+      width: var(--font-size-20);
+      aspect-ratio: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  /* Embeds */
+  & .content-embed figcaption cite::before {
+    margin-right: 2px;
+  }
+
+  /* Icons */
+  & span.currency {
+    margin-bottom: -3px;
+  }
+
+  /* References */
+  & .reference.fa-comment-dots::before {
+    padding: 0 0 0 2px;
+  }
+
+  & span.reference.fa-coins::before {
+    margin-left: 4px;
+  }
+
+  & span.reference {
+    color: var(--color-text-dark-primary);
+    border: 1px solid var(--color-border-dark-5);
+    padding: 0.1rem;
+  }
+  & span.reference:before {
+    font-family: var(--font-awesome);
+    font-weight: 900;
+    color: #000;
+    margin-right: 3px;
+  }
+}
+
+
+.content-embed .hide-in-embed,
+.chat-card .hide-in-embed,
+#tooltip .hide-in-embed {
+  display: none;
+}
+/* @Embed formatting for the following:
+ *  - Within .dmg elements
+ *  - With .dmg class
+ *  - From DMG compendiums
+ */
+.dmg figure.content-embed,
+figure.content-embed.dmg,
+figure.content-embed[data-uuid^="Compendium.dnd5e_collection_2024"] {
+  margin: 0.5em 0;
+
+  /* "inline" captions (non-rolltables) need some
+           space between the user provided
+           caption and the caption document link border */
+  & strong.embed-caption {
+    margin-right: 0.3em;
+  }
+
+  & .roll-table-embed {
+    /* Numerical ranges in the first column of roll tables
+             are best displayed without line breaks.
+             Centering follows wotc styling. */
+    & thead tr th:first-child,
+    & tbody tr td:first-child {
+      white-space: nowrap;
+      text-align: center;
+      padding-right: 2px;
+    }
+  }
+
+  /* 'caption-top' is useful for embedding extended item text within
+            another item, such as RollTables. Tweak stock formatting to look
+            more like the surrounding parent text. */
+  &.caption-top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+
+    & p + p {
+      margin-top: 0;
+    }
+
+    /* Removing padding from descriptions since
+             item sheets are usually smaller */
+    & figcaption {
+      padding: initial;
+      margin-top: 0;
+      text-align: left;
+
+      & .embed-caption {
+        text-align: left;
+        font-style: inherit;
+      }
+    }
+
+    /* RollTable embeds place their HTML description within the caption.
+             Inherit weight from parent container and style the citation
+             to look like the others */
+    & .roll-table-embed + figcaption {
+      font-weight: inherit;
+
+      & cite {
+        display: block;
+        font-weight: bold;
+        margin-top: 0.5em;
+      }
+    }
+  }
+}

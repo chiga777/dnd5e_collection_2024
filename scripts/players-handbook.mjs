@@ -1,4 +1,4 @@
-import PlayersHandbookJournalSheet from "./apps/journal-sheet.mjs";
+import PHBJournalSheet from "./apps/phb-journal-sheet.mjs";
 import {
   replacementAbilityReferences,
   replacementConditionTypes,
@@ -28,7 +28,7 @@ Hooks.once("init", () => {
   CONFIG.PHB = {};
 
   // Register Journal Sheet
-  DocumentSheetConfig.registerSheet(JournalEntry, "dnd-players-handbook", PlayersHandbookJournalSheet, {
+  DocumentSheetConfig.registerSheet(JournalEntry, "players-handbook", PHBJournalSheet, {
     types: ["base"],
     label: "玩家手册 Player's Handbook (2024)",
     makeDefault: false

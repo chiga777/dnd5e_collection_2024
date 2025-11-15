@@ -303,7 +303,8 @@ const newRules = {
   suffocation: "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.JaBtNuiFJZaRoJWX.JournalEntryPage.gAvV8TLyS8UGq00x",
   bloodied: "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.JaBtNuiFJZaRoJWX.JournalEntryPage.shZaSIlFPpHufPFn",
   jumping: "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.JaBtNuiFJZaRoJWX.JournalEntryPage.aaJOlRhI1H6vAxt9",
-  resistance: "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.JaBtNuiFJZaRoJWX.JournalEntryPage.Uk3xhCTvEfx8BN1O"
+  resistance: "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.JaBtNuiFJZaRoJWX.JournalEntryPage.Uk3xhCTvEfx8BN1O",
+  concentration: "Compendium.dnd5e_collection_2024.players-handbook.JournalEntry.JaBtNuiFJZaRoJWX.JournalEntryPage.0a2umg2mJMAzM9Q3"
 }
 
 const replacementConditionTypes = {

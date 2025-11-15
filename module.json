@@ -1,16 +1,24 @@
 {
-    "name": "dnd5e_collection_2024",
+    "id": "dnd5e_collection_2024",
     "title": "千菓的 D&D5E 合集 (2024)",
     "description": "一个包含了 D&D5E 部分资料的模组",
-    "version": "1.2.0",
+    "version": "1.9.0",
     "library": "false",
     "compatibility": {
         "minimum": 12,
         "verified": 12,
         "maximum": 13
     },
+    "languages": [
+        {
+            "lang": "cn",
+            "name": "中文",
+            "path": "lang/cn.json"
+        }
+    ],
     "esmodules": [ 
-        "scripts/players-handbook.mjs"
+        "scripts/players-handbook.mjs",
+        "scripts/dungeon-masters-guide.mjs"
     ],
     "authors": [
         {
@@ -21,7 +29,8 @@
     ],
     "styles": [
         "styles/dnd5e.css",
-        "styles/players-handbook.css"
+        "styles/players-handbook.css",
+        "styles/dungeon-masters-guide.css"
     ],
     "relationships": {
         "systems": [
@@ -49,7 +58,7 @@
         },
         {
             "name": "dungeon-masters-guide",
-            "label": "城主指南 Dungeon Master's Guide",
+            "label": "城主指南 Dungeon Master's Guide (2024)",
             "path": "packs/dungeon-masters-guide",
             "type": "JournalEntry",
             "banner": "modules/dnd5e_collection_2024/assets/banners/dmg-2024.webp",
@@ -70,12 +79,39 @@
             "system": "dnd5e"
         },
         {
+            "name": "dmg-content",
+            "label": "DMG 2024 资源",
+            "type": "Item",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/blue.webp",
+            "path": "packs/dmg-content",
+            "sorting": "m",
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        },
+        {
             "name": "phb-creatures",
             "label": "PHB 2024 造物",
             "path": "packs/phb-creatures",
             "type": "Actor",
             "banner": "modules/dnd5e_collection_2024/assets/banners/green.webp",
             "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        },
+                {
+            "name": "dmg-creatures",
+            "label": "DMG 2024 造物",
+            "path": "packs/dmg-creatures",
+            "type": "Actor",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/green.webp",
+            "module": "dnd5e_collection_2024",
+            "system": "dnd5e"
+        },
+        {
+            "name": "dmg-scenes",
+            "label": "DMG 2024 场景",
+            "path": "packs/dmg-scenes",
+            "type": "Scene",
+            "banner": "modules/dnd5e_collection_2024/assets/banners/purple.webp",
             "system": "dnd5e"
         },
         {
@@ -165,7 +201,10 @@
                     "sorting": "m",
                     "color": "#c64967",
                     "packs": [
-                        "dungeon-masters-guide"
+                        "dungeon-masters-guide",
+                        "dmg-content",
+                        "dmg-creatures",
+                        "dmg-scenes"
                     ]
                 },
                 {

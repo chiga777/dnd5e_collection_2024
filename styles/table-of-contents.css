@@ -63,6 +63,71 @@
 
 }
 
+.table-of-contents[data-compendium-id="dnd5e_collection_2024.dungeon-masters-guide"] {
+    --dnd5e-srd-color-chapter-header: var(--phb-red);
+    --dnd5e-srd-color-border: var(--phb-red);
+    --dnd5e-srd-color-box-header: #fff;
+
+    /* Frame styling: Background image and scrollbars */
+    & .window-content {
+
+      border-image: var(--dmg-border-image);
+      & .contents {
+        background:none;
+      }
+
+      scrollbar-width: thin;
+      scrollbar-color: var(--phb-red) transparent;
+
+      &::-webkit-scrollbar-track {
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border: none;
+        background: var(--phb-red);
+      }
+    }
+
+    & .contents section {
+      columns: 30ch;
+    }
+
+    /* Journals not showing their child pages should
+     * not be bold */
+    & .special-entry:not(.child-pages) a {
+      font-weight: normal;
+    }
+
+    & .contents .chapter {
+      /* Allow chapters to column break */
+      break-inside:auto;
+
+      /* "sub-chapter" entries should stay as a group */
+      & .child-pages {
+        break-inside: avoid-column;
+      }
+
+      /* Top level pages are aligned left in print ToC */
+      & > .pages {
+        margin-left:0;
+      }
+
+      /* Chapter font and slightly increased size */
+      & h3 a {
+        font-family: var(--dnd5e-font-modesto);
+        font-size: larger;
+      }
+
+      & h3 + .pages {
+        break-before:avoid;
+      }
+
+    }
+
+}
+
 .table-of-contents[data-compendium-id="dnd5e_collection_2024.index"] {
   --dnd5e-srd-color-chapter-header: var(--phb-red);
   --dnd5e-srd-color-border: var(--phb-red);

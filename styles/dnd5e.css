@@ -1,6 +1,9 @@
+/* 定义系统字体 */
 :root {
   --dnd5e-font-modesto: "Modesto Condensed", "Microsoft JhengHei", "Palatino Linotype", serif;
-  --dnd5e-font-roboto-slab: "Roboto Slab", "Microsoft Yahei", serif;
+  --dnd5e-font-roboto: Roboto, "Microsoft YaHei", sans-serif;
+  --dnd5e-font-roboto-slab: "Roboto Slab", "Microsoft YaHei", serif;
+  --dnd5e-font-roboto-condensed: "Roboto Condensed", "Microsoft YaHei", sans-serif;
 }
 
 .dnd5e.sheet .warnings .notification,
@@ -14,4 +17,170 @@
 
 .dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
   font-family: "Signika", "Microsoft JhengHei", sans-serif;
+}
+
+/* 物品源注释 */
+.item-original {
+  width: 100%;
+  margin: 0.7em 0 0.3em;
+  padding: 0.2em 0.2em;
+  text-align: right;
+  font-family: "Microsoft YaHei", serif;
+  font-style: italic;
+  font-size: 0.77em;
+  border-top: 1px solid #aaa;
+}
+
+/* 角色源注释 */
+.actor-original {
+  font-size: 1.17em;
+  color: #bc0f0f;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* 物品引文 */
+.item-quote {
+  font-style: italic;
+  padding: 0em 0.8em;
+  border-left: 4px solid var(--dnd5e-color-gold);
+}
+
+/* dc7 注释 */
+.dc7-note {
+  padding: 0em 0.8em;
+  border-left: 4px solid var(--dnd5e-color-gold);
+}
+
+.dc7-note::before {
+  content: "Dc⁷ 注释";
+  display: block;
+  font-weight: bold;
+  color: var(--dnd5e-color-gold);
+}
+
+.content-embed .dc7-note {
+  display: none;
+}
+
+:is(#tooltip, .locked-tooltip).dnd5e-tooltip .dc7-note {
+  display: none !important;
+}
+
+/* 日志中的物品标题 */
+.journal-entry .item-title {
+  font-size: 1.17em;
+  font-weight: bold;
+  color: var(--phb-red);
+}
+
+/* 表格标题 */
+.table-caption {
+  font-family: var(--dnd5e-font-roboto-slab);
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* 修改 Details Summary 样式 */
+details summary {
+  list-style: none;
+  position: relative;
+  padding-left: 0em;
+}
+
+details summary::marker {
+  display: none;
+}
+
+details summary::before {
+  content: "\f105";
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+  margin-right: 0.2em;
+  font-size: 1em;
+  color: inherit;
+}
+
+details[open] summary::before {
+  content: "\f078";
+}
+
+details[open] summary {
+  border-bottom: 1px solid var(--dnd5e-color-gold);
+  padding-bottom: 2px;
+}
+
+/* 修改工具指南的图标样式 */
+:is(.dnd5e, .dnd5e2, .dnd5e2-journal) .fvtt:is(.quest, .advice) > figure img.square {
+  background: var(--dnd5e-color-light-gray);
+  border: 4px solid var(--dnd5e-color-gold);
+  box-shadow: 0 0 4px var(--dnd5e-shadow-45);
+}
+
+/* 修改物品卡的图标样式 */
+.dnd5e2.sheet.item .sheet-header .item-image {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 2%;
+  border: 3px solid var(--dnd5e-color-gold);
+  box-shadow: 0 0 4px var(--dnd5e-shadow-45);
+  object-fit: cover;
+  background: var(--dnd5e-color-light-gray);
+  margin: 0;
+  color: var(--color-light-1);
+  text-align: center;
+  align-content: center;
+}
+
+/* 修改系统工具提示的图标样式 */
+:is(#tooltip, .locked-tooltip):is(.item-tooltip, .effect-tooltip) .header img {
+  width: 60px;  
+  height: 60px;
+  border: 2px solid var(--dnd5e-color-gold);
+  box-shadow: 0 0 4px var(--dnd5e-shadow-45);
+  border-radius: 5%;
+  object-fit: cover;
+  background: var(--dnd5e-color-light-gray);
+}
+
+/* Rarity Color 测试*/
+.rarity-uncommon {
+  background:
+    url("../assets/ui/rarity-color/uncommon-back.webp") center/contain no-repeat,
+    var(--dnd5e-color-light-gray) !important;
+  border-image-source: url('../assets/ui/rarity-color/uncommon-front.webp') !important;
+  border-image-slice: 3 !important;
+}
+
+.rarity-rare {
+  background:
+    url("../assets/ui/rarity-color/rare-back.webp") center/contain no-repeat,
+    var(--dnd5e-color-light-gray) !important;
+  border-image-source: url('../assets/ui/rarity-color/rare-front.webp') !important;
+  border-image-slice: 3 !important;
+}
+
+.rarity-veryrare {
+  background:
+    url("../assets/ui/rarity-color/veryrare-back.webp") center/contain no-repeat,
+    var(--dnd5e-color-light-gray) !important;
+  border-image-source: url('../assets/ui/rarity-color/veryrare-front.webp') !important;
+  border-image-slice: 3 !important;
+}
+
+.rarity-legendary {
+  background:
+    url("../assets/ui/rarity-color/legendary-back.webp") center/contain no-repeat,
+    var(--dnd5e-color-light-gray) !important;
+  border-image-source: url('../assets/ui/rarity-color/legendary-front.webp') !important;
+  border-image-slice: 3 !important;
+}
+
+.rarity-artifact {
+  background:
+    url("../assets/ui/rarity-color/artifact-back.webp") center/contain no-repeat,
+    var(--dnd5e-color-light-gray) !important;
+  border-image-source: url('../assets/ui/rarity-color/artifact-front.webp') !important;
+  border-image-slice: 3 !important;
 }
